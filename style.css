@@ -55,6 +55,9 @@ body {
   font-weight: 600;
   color: #fff;
 }
+#navbar a {
+  scroll-behavior: smooth;
+}
 
 #mobile {
   display: none;
@@ -140,12 +143,12 @@ body {
   transition: height 0.5s;
 }
 .work-info p {
-    color: #fff;
+  color: #fff;
 }
-.work-info h3{
-    color: #fff;
-    margin-bottom: 20px;
-    font-weight: 600;
+.work-info h3 {
+  color: #fff;
+  margin-bottom: 20px;
+  font-weight: 600;
 }
 .work-info a {
   margin-top: 25px;
@@ -165,56 +168,85 @@ body {
 }
 
 /* -----experience----- */
-#experience { 
-    display: flex;
-    justify-content: space-between;
+#experience {
+  display: flex;
+  justify-content: space-between;
 }
-.experience-history{
-    display: flex;
-    flex-direction: column;
+.experience-history {
+  display: flex;
+  flex-direction: column;
+  padding-right: 50px;
 }
-.experience-history, .skills{
-    flex-basis: 45%;
+.experience-history,
+.skills {
+  flex-basis: 50%;
 }
 /* .experience-history {
     background-color: yellowgreen;
 } */
-.job, .school{
-    margin: 15px 0;
+.job,
+.school {
+  margin: 15px 0;
 }
-.job-title, .skill-section-title, .school-title{
-    color: #c52eac;
-    font-weight: 600;
-    font-size: 24px;
+.job-title,
+.skill-section-title,
+.school-title {
+  color: #c52eac;
+  font-weight: 600;
+  font-size: 24px;
 }
-.job-header, .school-header {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.job-header,
+.school-header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
-.job-years, .school-years {
-    color: #fff;
+.job-years,
+.school-years {
+  color: #fff;
 }
-.job h4, .school h4 {
-    color: #08c3a2cc;
-    font-size: 18px;
+.job h4,
+.school h4 {
+  color: #08c3a2cc;
+  font-size: 18px;
 }
 .job p,
 .skill-section li,
-.school p 
-{
-    color: #fff;
-    font-size: 18px;
+.school p {
+  color: #fff;
+  font-size: 18px;
 }
 .skills {
-    text-align: right;
+  text-align: right;
+  border-left: 2px solid #c52eac;
 }
 .skill-list {
-    margin: 15px 0;
+  margin: 15px 0;
 }
 .skill-list ul {
-    display: grid;grid-template-columns: repeat(3, minmax(100px, 1fr));
+  display: grid;
+  grid-template-columns: repeat(3, minmax(100px, 1fr));
 }
 .skill-list li {
-    list-style: none;
+  list-style: none;
+}
+
+/* -----contact start----- */
+#contact {
+  text-align: center;
+}
+.contact-list {
+  color: #fff;
+  font-size: 24px;
+}
+.contact-list a {
+    text-decoration: none;
+    color: #fff;
+}
+.contact-list i {
+  color: #c52eac;
+  margin: 0 15px;
+}
+.social-icons {
+  margin: 15px 0;
 }
