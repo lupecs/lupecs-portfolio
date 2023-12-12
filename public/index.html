@@ -7,7 +7,23 @@
     <title>Guadalupe Sahagun - Software Engineer</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/ff7bbaf836.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/x-icon" href="./assets/portfolio-logo-icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
 </head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LN46MFLVSR"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-LN46MFLVSR');
+</script>
 
 <body>
     <section id="header">
@@ -16,49 +32,63 @@
                 <li><a href="#projects">PROJECTS</a></li>
                 <li><a href="#experience">EXPERIENCE/SKILLS</a></li>
                 <li><a href="#contact">CONTACT</a></li>
-                <a href="#" id="close"><i class="fa fa-times"></i></a>
             </ul>
         </nav>
-        <div id="mobile">
-            <i id="bar" class="fas fa-outdent"></i>
-        </div>
         <div class="hero">
 
         </div>
     </section>
 
     <section id="hero">
-        <h1 class="hero-h1">Guadalupe Sahagun</h1>
-        <h2 class="hero-h2">Software Engineer</h2>
-        <h2 class="hero-h2">Based in Los Angeles</h2>
-        <a href="#projects"><i class="fa-solid fa-circle-chevron-down"></i></a>
+        <div class="hero-content">
+            <h1 class="hero-h1">Guadalupe Sahagun</h1>
+            <h2>Software Engineer</h2>
+            <p><i class="fa-regular fa-heart"></i></p>
+            <h2>Based in Los Angeles</h2>
+            <div class="social-icons">
+                <a href="https://github.com/lupecs"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/guadalupesahagun/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/loopitacodes/"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <a href="#projects"><i class="fa-solid fa-circle-chevron-down"></i></a>
+        </div>
     </section>
 
     <section id="projects" class="section-p1">
         <h1 class="section-header">PROJECTS</h1>
         <div class="work-list">
             <div class="work">
-                <img src="assets/crypto-mystik.png" class="projects-proj-img">
+                <img src="assets/cagedin.png" class="projects-proj-img">
                 <div class="work-info">
-                    <h3>Crypto Mystik</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque, nisi.</p>
-                    <a href="#">View Project</a>
+                    <h3>Caged In</h3>
+                    <p>Feeling lucky? Place a bet on your favorite fighter! Caged In allows MMA fans to vote on fighter
+                        they believe will win the match 24hours before the fight begins. Fans will collect statistics on
+                        their predictions and be ranked among other users and friends.</p>
+                    <a href="https://github.com/lupecs/CagedIn" target="_blank"><i
+                            class="fa-brands fa-square-github"></i></a>
                 </div>
             </div>
             <div class="work">
                 <img src="assets/crypto-mystik.png" class="projects-proj-img">
                 <div class="work-info">
                     <h3>Crypto Mystik</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque, nisi.</p>
-                    <a href="#">View Project</a>
+                    <p>Crypto Mystik is an interactive web application that allows users to analyze the latest
+                        cryptocurrency and evaluate personal coin data. As a registered user, one can keep track of any
+                        coin and be able to calculate past, present, and future gains/losses.</p>
+                    <a href="https://github.com/lupecs/cryptomystik" target="_blank"><i
+                            class="fa-brands fa-square-github"></i></a>
                 </div>
             </div>
             <div class="work">
-                <img src="assets/crypto-mystik.png" class="projects-proj-img">
+                <img src="assets/tacovato.png" class="projects-proj-img">
                 <div class="work-info">
                     <h3>Crypto Mystik</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque, nisi.</p>
-                    <a href="#">View Project</a>
+                    <p>Love tacos but don't know where to go? That's what Taco Vato is here for. Taco Vato is a
+                        collection of street taco stands and trucks only! Based on your location and time of search,
+                        Taco Vato is your friendly neighborhood friend that will map out the closest taco stand or truck
+                        available to you.</p>
+                    <a href="https://github.com/lupecs/tv-project" target="_blank"><i
+                            class="fa-brands fa-square-github"></i></a>
                 </div>
             </div>
         </div>
@@ -182,5 +212,29 @@
         </div>
     </section>
 </body>
+
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+        apiKey: "AIzaSyAmZ4iC3xG8NwvPEEgEtGFm7qfyCDvLZTk",
+        authDomain: "lupecs-1a396.firebaseapp.com",
+        projectId: "lupecs-1a396",
+        storageBucket: "lupecs-1a396.appspot.com",
+        messagingSenderId: "583662724574",
+        appId: "1:583662724574:web:1caf338603700d361fe94f",
+        measurementId: "G-LY0FSKYLP3"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+</script>
 
 </html>

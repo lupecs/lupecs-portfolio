@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
 }
 
 /* -----Global Styles----- */
@@ -10,15 +11,8 @@ h1 {
   color: #fff;
 }
 
-h2 {
-}
-
-p {
-}
-
 body {
   background: #000;
-  scroll-behavior: smooth;
 }
 
 .section-p1 {
@@ -59,14 +53,6 @@ body {
   scroll-behavior: smooth;
 }
 
-#mobile {
-  display: none;
-  align-items: center;
-}
-#close {
-  display: none;
-}
-
 /* -----Hero Start----- */
 #hero {
   width: 100%;
@@ -76,26 +62,39 @@ body {
   background-size: 100% 100%;
   background-repeat: no-repeat;
   display: flex;
+  justify-content: center;
+}
+.hero-content {
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  line-height: 60px;
 }
-
-.hero-h1 {
+#hero h1 {
   color: #fff;
   text-shadow: 10px 10px 8px #c52eac, 10px 6px 8px #08c3a2cc;
-  font-family: Blaster;
-  font-size: 68px;
-  font-style: normal;
-  line-height: normal;
+  font-size: 6rem;
   text-transform: uppercase;
 }
-.hero-h2 {
-  color: #ccc;
-  font-size: 48px;
+#hero h2 {
+  color: #fff;
+  font-size: 42px;
   font-style: normal;
   font-weight: 600;
+  text-align: center;
+}
+.hero-content p {
+  color: #08c3a2cc;
+  font-size: 24px;
+}
+.hero-content .fa-brands {
+  color: #08c3a2cc;
+  font-size: 24px;
+  margin: 0 15px;
+  transition: 0.5s;
+}
+.hero-content .fa-brands:hover {
+  color: #fff;
 }
 .fa-circle-chevron-down {
   font-size: 50px;
@@ -106,6 +105,7 @@ body {
 /* -----projects----- */
 #projects {
   text-align: center;
+  background: #000;
 }
 .work-list {
   display: grid;
@@ -154,11 +154,13 @@ body {
   margin-top: 25px;
   color: #fff;
   text-decoration: none;
-  font-size: 16px;
   background-color: #c52eac;
   border-radius: 10px;
-  padding: 10px 15px;
+  padding: 8px 10px;
   text-align: center;
+}
+.work-info i {
+  font-size: 32px;
 }
 .work:hover img {
   transform: scale(1.1);
@@ -240,13 +242,132 @@ body {
   font-size: 24px;
 }
 .contact-list a {
-    text-decoration: none;
-    color: #fff;
+  text-decoration: none;
+  color: #fff;
 }
 .contact-list i {
   color: #c52eac;
   margin: 0 15px;
+  transition: 0.5s;
+}
+.contact-list i:hover {
+  color: #08c3a2cc;
 }
 .social-icons {
   margin: 15px 0;
+}
+
+@media screen and (max-width: 425px) {
+  .section-p1 {
+    padding: 20px 15px;
+  }
+  .section-header {
+    margin: 10px 0;
+  }
+  #navbar li {
+    padding: 0 10px;
+  }
+  #navbar li a {
+    font-size: 14px;
+  }
+  #hero h1 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  #hero h2 {
+    font-size: 1.3rem;
+  }
+  .fa-circle-chevron-down {
+    font-size: 35px;
+  }
+  .work-list {
+    grid-template-columns: repeat(1, minmax(200px, 1fr));
+    margin-top: 25px;
+    grid-gap: 20px;
+  }
+  .work-info {
+    padding: 0 15px;
+    font-size: 0.875rem;
+  }
+  .work-info h3 {
+    margin-bottom: 5px;
+  }
+  #experience {
+    flex-direction: column;
+  }
+  .experience-history {
+    padding-right: 10 px;
+  }
+  .job-title,
+  .skill-section-title,
+  .school-title {
+    font-size: 18px;
+  }
+  #experience h4,
+  #experience p {
+    font-size: 14px;
+  }
+  .skills {
+    border: none;
+  }
+  .skill-list ul {
+    grid-template-columns: repeat(2, minmax(40px, 1fr));
+  }
+  .skill-list li {
+    font-size: 14px;
+  }
+  .contact-list {
+    font-size: 16px;
+  }
+}
+
+@media screen and ((min-width: 426px) and (max-width: 768px)) {
+  .section-header {
+    margin: 5px 0;
+  }
+  #navbar li {
+    padding: 0 10px;
+  }
+  #navbar li a {
+    font-size: 16px;
+  }
+  .section-header {
+    margin: 15px 0;
+  }
+  #hero h1 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+  }
+  #hero h2 {
+    font-size: 1.8rem;
+  }
+  #experience {
+    flex-direction: column;
+  }
+  .work-list {
+    grid-template-columns: repeat(1, minmax(80px, 1fr));
+  }
+  .job h4 {
+    font-size: 1rem;
+  }
+  .job-title,
+  .skill-section-title,
+  .school-title {
+    font-size: 1.2rem;
+  }
+  .skills {
+    border: none;
+  }
+  .skill-list ul {
+    grid-template-columns: repeat(2, minmax(30px, 1fr));
+  }
+  .skill-list li {
+    font-size: 1rem;
+  }
+}
+
+@media screen and ((min-width: 769px) and (max-width: 1024px)) {
+  #hero h1 {
+    font-size: 3.5rem;
+  }
 }
