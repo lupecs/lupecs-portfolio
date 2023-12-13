@@ -281,7 +281,7 @@ body {
     font-size: 35px;
   }
   .work-list {
-    grid-template-columns: repeat(1, minmax(200px, 1fr));
+    grid-template-columns: repeat(1, minmax(150px, 1fr));
     margin-top: 25px;
     grid-gap: 20px;
   }
@@ -322,6 +322,9 @@ body {
 }
 
 @media screen and ((min-width: 426px) and (max-width: 768px)) {
+  .section-p1 {
+    padding: 20px 15px;
+  }
   .section-header {
     margin: 5px 0;
   }
@@ -344,6 +347,10 @@ body {
   #experience {
     flex-direction: column;
   }
+  .work-info {
+    padding: 0 15px;
+    font-size: 1rem;
+  }
   .work-list {
     grid-template-columns: repeat(1, minmax(80px, 1fr));
   }
@@ -363,6 +370,9 @@ body {
   }
   .skill-list li {
     font-size: 1rem;
+  }
+  .contact-list {
+    font-size: 18px;
   }
 }
 
